@@ -65,15 +65,17 @@ Modelo simplificado inspirado no Git Flow:
 3. Todo merge acontece por Pull Request com pelo menos **1 aprovação** do Revisor de código.
 4. Conflitos são resolvidos por quem abriu o Pull Request, atualizando a própria branch antes do merge.
 5. Branches já mescladas podem ser apagadas.
+6. Exceção: a configuração inicial do repositório (estrutura, README, plano e versão `v1.0.0`) foi feita diretamente na `main` pelo Gestor de Configuração, antes da criação das branches de desenvolvimento.
 
 ## 5. Papéis
 
-| Papel | Responsabilidades |
-|---|---|
-| Gestor de Configuração | Cria o repositório, define regras, protege a `main`, cria as tags e organiza o relatório |
-| Desenvolvedor principal | Mantém o código base e as funcionalidades centrais |
-| Desenvolvedor | Implementa funcionalidades em branches próprias |
-| Revisor de código | Revisa e aprova os Pull Requests, fazendo o merge |
+| Papel | Integrante | Responsabilidades |
+|---|---|---|
+| Gestor de Configuração | Thiago Duarte | Cria o repositório, define regras, protege a `main`, cria as tags, resolve conflitos de seus Pull Requests e organiza o relatório |
+| Desenvolvedora principal | Crisnelly Nobre | Mantém o código base e as funcionalidades centrais |
+| Revisor de código | Leandro Pires | Revisa e aprova os Pull Requests, fazendo o merge, e também desenvolve correções em branch própria |
+
+Como a equipe tem 3 integrantes, todos também atuam como desenvolvedores em suas próprias branches. Nenhum Pull Request é aprovado por quem o abriu.
 
 ## 6. Estratégia de backup e recuperação
 

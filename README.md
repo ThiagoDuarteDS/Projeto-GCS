@@ -15,12 +15,9 @@ Praticar:
 
 | Integrante | Papel |
 |---|---|
-| Nome 1 | Gestor de Configuração |
-| Nome 2 | Desenvolvedor principal |
-| Nome 3 | Desenvolvedor |
-| Nome 4 | Revisor de código |
-
-> Substituir pelos nomes reais e pelos usuários do GitHub.
+| Thiago Duarte | Gestor de Configuração |
+| Crisnelly Nobre | Desenvolvedora principal |
+| Leandro Pires | Revisor de código |
 
 ## Estrutura do repositório
 

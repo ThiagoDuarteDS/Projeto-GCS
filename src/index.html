@@ -5,30 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto GCS</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; color: #222; }
+    :root { --cor: #1f6feb; --fundo: #f6f8fa; --borda: #d0d7de; --texto: #1f2328; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background: var(--fundo); color: var(--texto); line-height: 1.6; }
     header, footer { text-align: center; }
-    h1 { margin-bottom: 4px; }
+    header { background: var(--cor); color: #fff; padding: 48px 16px 40px; }
+    header h1 { margin: 0 0 8px; font-size: 2.2rem; }
+    header p { margin: 0; opacity: 0.9; }
+    footer { padding: 24px 16px; border-top: 1px solid var(--borda); color: #57606a; }
+    main { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+    section { background: #fff; border: 1px solid var(--borda); border-radius: 10px; padding: 20px 24px; margin-bottom: 20px; }
+    h2 { margin-top: 0; color: var(--cor); }
     ul { line-height: 1.8; }
+    .equipe { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card { border: 1px solid var(--borda); border-radius: 8px; padding: 16px; text-align: center; background: var(--fundo); }
+    .card strong { display: block; font-size: 1.1rem; }
+    .card span { color: #57606a; font-size: 0.95rem; }
+    .fluxo { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+    .fluxo li { background: var(--cor); color: #fff; border-radius: 999px; padding: 6px 14px; font-size: 0.95rem; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--borda); }
+    code { background: var(--fundo); border: 1px solid var(--borda); border-radius: 4px; padding: 1px 6px; }
   </style>
 </head>
 <body>
   <header>
-
-    <h1>Projeto GCS - Versão Principal </h1>
-
+    <h1>Projeto GCS - Versão Principal</h1>
     <p>Página de exemplo para praticar Git e GitHub em equipe.</p>
   </header>
 
   <main>
-    <h2>Sobre o projeto</h2>
-    <p>Este projeto simula o trabalho de uma equipe de desenvolvimento usando controle de versão.</p>
+    <section>
+      <h2>Sobre o projeto</h2>
+      <p>Este projeto simula o trabalho de uma equipe de desenvolvimento usando controle de versão com Git e GitHub, aplicando os conceitos de Gerência de Configuração de Software (GCS).</p>
+    </section>
 
-    <h2>Equipe</h2>
-    <ul>
-      <li>Thiago Duarte – Gestor de Configuração</li>
-      <li>Crisnelly Nobre – Desenvolvedora principal</li>
-      <li>Leandro Pires – Revisor de código</li>
-    </ul>
+    <section>
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Controle de versão dos artefatos do projeto</li>
+        <li>Criação e merge de branches</li>
+        <li>Resolução de conflitos</li>
+        <li>Convenções de commit e de versionamento</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Equipe</h2>
+      <div class="equipe">
+        <div class="card"><strong>Thiago Duarte</strong><span>Gestor de Configuração</span></div>
+        <div class="card"><strong>Crisnelly Nobre</strong><span>Desenvolvedora principal</span></div>
+        <div class="card"><strong>Leandro Pires</strong><span>Revisor de código</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fluxo de trabalho</h2>
+      <ol class="fluxo">
+        <li>1. Criar branch</li>
+        <li>2. Fazer commits</li>
+        <li>3. Abrir Pull Request</li>
+        <li>4. Revisão e aprovação</li>
+        <li>5. Merge</li>
+        <li>6. Tag de versão</li>
+      </ol>
+      <p>Mensagens de commit seguem o padrão <code>tipo: descrição</code>, por exemplo <code>feat: adiciona rodapé</code>.</p>
+    </section>
+
+    <section>
+      <h2>Versões</h2>
+      <table>
+        <tr><th>Versão</th><th>Descrição</th></tr>
+        <tr><td><code>v1.0.0</code></td><td>Estrutura inicial do projeto</td></tr>
+        <tr><td><code>v2.0.0</code></td><td>Contribuições da equipe com conflito resolvido</td></tr>
+      </table>
+    </section>
   </main>
 
   <footer>
